@@ -7,23 +7,22 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
-                <li class="nav-item">
-                    <router-link class="nav-link" to="/" style="color:white">Home</router-link>
-                </li>
-                <li v-if="auth==''" class="nav-item">
-                    <router-link class="nav-link" to="/login">Login</router-link>
-                </li>
-                <li v-if="auth==''" class="nav-item">
-                    <router-link class="nav-link" to="/register">Register</router-link>
-                </li>
-                <li v-if="auth=='loggedin'" class="nav-item">
-                    <router-link class="nav-link" to="/profile">Profile</router-link>
-                </li>
-                <li v-if="auth=='loggedin'" class="nav-item">
-                    <a class="nav-link" href="" @click="logout">Logout</a>
-                </li>
-            </ul>
-   
+        <li class="nav-item">
+            <router-link class="nav-link" to="/" style="color:white">Home</router-link>
+        </li>
+        <li v-if="auth==''" class="nav-item">
+            <router-link class="nav-link" to="/login">Login</router-link>
+        </li>
+        <li v-if="auth==''" class="nav-item">
+            <router-link class="nav-link" to="/register">Register</router-link>
+        </li>
+        <li v-if="auth=='loggedin'" class="nav-item">
+            <router-link class="nav-link" to="/profile">Profile</router-link>
+        </li>
+        <li v-if="auth=='loggedin'" class="nav-item">
+            <a class="nav-link" href="" @click="logout">Logout</a>
+        </li>
+    </ul>  
   </div>
 </nav>
 </template>
@@ -34,7 +33,7 @@ export default {
     data(){
         return{
             auth:'',
-            user:''
+            
         }
     },
 
