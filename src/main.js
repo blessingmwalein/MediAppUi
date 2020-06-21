@@ -9,12 +9,17 @@ require("../node_modules/font-awesome/css/font-awesome.min.css")
 
 // require ('./assets/css/font-awesome.min.css');
 require ("../public/assets/css/style.css")
+
 require('../public/assets/css/feathericon.min.css')
 
 //vue toaster
 
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
+
+//vue loader
+import 'vue-loaders/dist/vue-loaders.css';
+import VueLoaders from 'vue-loaders';
 
 
 const options = {
@@ -32,7 +37,7 @@ const options = {
   rtl: false
 };
 
-
+Vue.use(VueLoaders)
 Vue.use(Toast, options);
 Vue.config.productionTip = false
 

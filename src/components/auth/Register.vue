@@ -10,7 +10,7 @@
                         <div class="login-right">
 							<div class="login-right-wrap">
 								<h1>Register</h1>
-								<p class="account-subtitle">medicoHelp</p>
+								<p class="account-subtitle">mediApp</p>
 								
 								<!-- Form -->
 								<form action="">

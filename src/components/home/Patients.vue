@@ -185,3 +185,22 @@
 		</div>
     </div>
 </template>
+
+<script>
+import axios from 'axios'
+export default {
+    
+    data(){
+        return{
+            patients:[],
+
+        }
+    },
+    mounted(){
+        var hospital_id=this.$store.state.user.hospital_id
+        
+        axios.get()
+    }
+
+}
+</script>>

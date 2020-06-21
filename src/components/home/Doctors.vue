@@ -1,242 +1,488 @@
 <template>
-    <div>
-        <div class="page-wrapper" style="min-height: 900px;">
-            <div class="content container-fluid">
-            
-                <!-- Page Header -->
-                <div class="page-header">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h3 class="page-title">List of Doctors</h3>
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                <li class="breadcrumb-item"><a href="javascript:(0);">Users</a></li>
-                                <li class="breadcrumb-item active">Doctor</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Page Header -->
-                
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"></div></div><div class="row"><div class="col-sm-12"><table class="datatable table table-hover table-center mb-0 dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-                                        <thead>
-                                            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Doctor Name: activate to sort column descending" style="width: 292px;">Doctor Name</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Speciality: activate to sort column ascending" style="width: 132px;">Speciality</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Member Since: activate to sort column ascending" style="width: 168px;">Member Since</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Earned: activate to sort column ascending" style="width: 96px;">Earned</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Account Status: activate to sort column ascending" style="width: 177px;">Account Status</th></tr>
-                                        </thead>
-                                        <tbody>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                        <tr role="row" class="odd">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-02.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Darren Elder</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Dental</td>
-                                                
-                                                <td>11 Jun 2019 <br><small>4.50 AM</small></td>
-                                                
-                                                <td>$5000.00</td>
-                                                
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                            </tr><tr role="row" class="even">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-03.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Deborah Angel</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Cardiology</td>
-                                                
-                                                <td>4 Jan 2018 <br><small>9.40 AM</small></td>
-                                                
-                                                <td>$3300.00</td>
-                                                
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                            </tr><tr role="row" class="odd">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-09.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. John Gibbs</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Dental</td>
-                                                
-                                                <td>21 Apr 2018 <br><small>02.59 PM</small></td>
-                                                
-                                                <td>$4100.00</td>
-                                                
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                            </tr><tr role="row" class="even">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-06.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Katharine Berthold</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Orthopaedics</td>
-                                                
-                                                <td>23 Mar 2019 <br><small>02.50 PM</small></td>
-                                                
-                                                <td>$4000.00</td>
-                                                
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                            </tr><tr role="row" class="odd">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-07.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Linda Tobin</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Neurology</td>
-                                                
-                                                <td>14 Dec 2018 <br><small>01.59 AM</small></td>
-                                                
-                                                <td>$2000.00</td>
-                                                
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                            </tr><tr role="row" class="even">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-05.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Marvin Campbell</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Orthopaedics</td>
-                                                
-                                                <td>24 Jan 2019 <br><small>02.59 AM</small></td>
-                                                
-                                                <td>$3700.00</td>
-                                                
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                            </tr><tr role="row" class="odd">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-10.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Olga Barlow</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Dental</td>
-                                                
-                                                <td>15 Feb 2018 <br><small>03.59 AM</small></td>
-                                                
-                                                <td>$3500.00</td>
-                                                
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                            </tr><tr role="row" class="even">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-08.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Paul Richard</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Dermatology</td>
-                                                
-                                                <td>11 Jan 2019 <br><small>02.59 AM</small></td>
-                                                
-                                                <td>$3000.00</td>
-                                                
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                            </tr><tr role="row" class="odd">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Ruby Perrin</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Dental</td>
-                                                
-                                                <td>14 Jan 2019 <br><small>02.59 AM</small></td>
-                                                
-                                                <td>$3100.00</td>
-                                                
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                            </tr><tr role="row" class="even">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-04.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Sofia Brient</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Urology</td>
-                                                
-                                                <td>5 Jul 2019 <br><small>12.59 AM</small></td>
-                                                
-                                                <td>$3500.00</td>
-                                                
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                            </tr></tbody>
-                                    </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 10 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>			
-                </div>
-                
-            </div>			
+  <div>
+    <div class="page-wrapper" style="min-height: 900px;">
+      <div class="content container-fluid">
+        <!-- Page Header -->
+        <div class="page-header">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="page-title">List of Doctors</h3>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <router-link to="/">Dashboard</router-link>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="javascript:(0);">Users</a>
+                </li>
+                <li class="breadcrumb-item active">Doctor</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <!-- /Page Header -->
+        <div
+          class="container justify-content-center text-center"
+          style="padding-top:15%"
+          v-if="loading==true"
+        >
+          <vue-loaders-ball-pulse color="#55ce63" scale="1.5" />
+        </div>
+        <div v-else class="row">
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <div
+                    id="DataTables_Table_0_wrapper"
+                    class="dataTables_wrapper dt-bootstrap4 no-footer"
+                  >
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                        <div class="dataTables_length" id="DataTables_Table_0_length">
+                          <a
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            href="#edit_personal_details"
+                          >Add New</a>
+                          <div
+                            class="modal fade"
+                            id="edit_personal_details"
+                            aria-hidden="true"
+                            role="dialog"
+                          >
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Personal Details</h5>
+                                  <button
+                                    type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-label="Close"
+                                  >
+                                    <span aria-hidden="true">×</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form>
+                                    <div class="row form-row">
+                                      <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                          <label>First Name</label>
+                                          <input
+                                            v-model="doctor.first_name"
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Enter Firstname"
+                                            required
+                                          />
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                          <label>Last Name</label>
+                                          <input
+                                            type="text"
+                                            v-model="doctor.last_name"
+                                            class="form-control"
+                                            placeholder="Enter Lastname"
+                                            required
+                                          />
+                                        </div>
+                                      </div>
+                                      <div class="col-12">
+                                        <div class="form-group">
+                                          <label>Gender</label>
+                                          <div class="cal-icon">
+                                            <select
+                                              v-model="doctor.gender"
+                                              class="form-control"
+                                              required
+                                            >
+                                              <option>-- Select --</option>
+                                              <option value="male">Male</option>
+                                              <option value="female">Female</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                          <label>Email ID</label>
+                                          <input
+                                            type="email"
+                                            v-model="doctor.email"
+                                            class="form-control"
+                                            placeholder="x.bling@example.com"
+                                            required
+                                          />
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                          <label>Mobile</label>
+                                          <input
+                                            type="text"
+                                            v-model="doctor.phone"
+                                            placeholder="+263"
+                                            class="form-control"
+                                            required
+                                          />
+                                        </div>
+                                      </div>
+                                      <div class="col-12">
+                                        <div class="form-group">
+                                          <label>Address</label>
+                                          <textarea
+                                            v-model="doctor.address"
+                                            rows="5"
+                                            cols="5"
+                                            class="form-control"
+                                            placeholder="Enter address here"
+                                            required
+                                          ></textarea>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                          <label>Password</label>
+                                          <input
+                                            v-model="doctor.password"
+                                            type="password"
+                                            class="form-control"
+                                            value="Enter Password"
+                                            required
+                                          />
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button
+                                      type="submit"
+                                      v-if="saveLoading==false"
+                                      @click.prevent="registerDoc()"
+                                      class="btn btn-primary btn-block"
+                                    >Save Changes</button>
+                                    <div
+                                      v-if="saveLoading==true"
+                                      class="d-flex justify-content-center"
+                                    >
+                                      <div class="spinner-border text-primary" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <table
+                          class="datatable table table-hover table-center mb-0 dataTable no-footer"
+                          id="DataTables_Table_0"
+                          role="grid"
+                          aria-describedby="DataTables_Table_0_info"
+                        >
+                          <thead>
+                            <tr role="row">
+                              <th
+                                class="sorting_asc"
+                                tabindex="0"
+                                aria-controls="DataTables_Table_0"
+                                rowspan="1"
+                                colspan="1"
+                                aria-sort="ascending"
+                                aria-label="Doctor Name: activate to sort column descending"
+                                style="width: 292px;"
+                              >Doctor Name</th>
+                              <th
+                                class="sorting"
+                                tabindex="0"
+                                aria-controls="DataTables_Table_0"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Speciality: activate to sort column ascending"
+                                style="width: 132px;"
+                              >Gender</th>
+                              <th
+                                class="sorting"
+                                tabindex="0"
+                                aria-controls="DataTables_Table_0"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Member Since: activate to sort column ascending"
+                                style="width: 168px;"
+                              >Member Since</th>
+                              <th
+                                class="sorting"
+                                tabindex="0"
+                                aria-controls="DataTables_Table_0"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Earned: activate to sort column ascending"
+                                style="width: 96px;"
+                              >Address</th>
+                              <th
+                                class="sorting"
+                                tabindex="0"
+                                aria-controls="DataTables_Table_0"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Earned: activate to sort column ascending"
+                                style="width: 96px;"
+                              >Phone</th>
+                              <th
+                                class="sorting"
+                                tabindex="0"
+                                aria-controls="DataTables_Table_0"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Account Status: activate to sort column ascending"
+                                style="width: 177px;"
+                              >Delete</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr v-for="doctor in doctors" :key="doctor.id" role="row" class="odd">
+                              <td class="sorting_1">
+                                <h2 class="table-avatar">
+                                  <router-link
+                                    :to="{name:'DoctorProfile', params:{id:doctor._id}}"
+                                    class="avatar avatar-sm mr-2"
+                                  >
+                                    <img
+                                      class="avatar-img rounded-circle"
+                                      src="assets/img/user.png"
+                                      alt="User Image"
+                                    />
+                                  </router-link>
+                                  <router-link
+                                    :to="{name:'DoctorProfile', params:{id:doctor._id}}"
+                                  >Dr. {{ doctor.first_name +" "+doctor.last_name }}</router-link>
+                                </h2>
+                              </td>
+                              <td>{{ doctor.gender }}</td>
+                              <td>
+                                {{ doctor.created_at }}
+                                <br />
+                              </td>
+                              <td>{{ doctor.address }}</td>
+                              <td>{{ doctor.phone }}</td>
+
+                              <td>
+                                <div class="status-toggle">
+                                  <a
+                                    class="btn btn-sm bg-danger-light"
+                                    data-toggle="modal"
+                                    href="#delete_modal"
+                                  >
+                                    <i class="fe fe-trash"></i> Delete
+                                  </a>
+                                  <div
+                                    class="modal fade"
+                                    id="delete_modal"
+                                    role="dialog"
+                                    style="display: none;"
+                                    aria-hidden="true"
+                                  >
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                      <div class="modal-content">
+                                        <!--	<div class="modal-header">
+                                        <h5 class="modal-title">Delete</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>-->
+                                        <div class="modal-body">
+                                          <div class="form-content p-2">
+                                            <h4 class="modal-title">Delete</h4>
+                                            <p class="mb-4">Are you sure want to delete?</p>
+                                            <button
+                                              type="button"
+                                              class="btn btn-primary"
+                                              @click.prevent="deleteDoc(doctor)"
+                                              data-dismiss="modal"
+                                            >Yes</button>
+                                            <button
+                                              type="button"
+                                              class="btn btn-danger"
+                                              data-dismiss="modal"
+                                            >Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-5">
+                        <div
+                          class="dataTables_info"
+                          id="DataTables_Table_0_info"
+                          role="status"
+                          aria-live="polite"
+                        >Showing 1 to 10 of 10 entries</div>
+                      </div>
+                      <div class="col-sm-12 col-md-7">
+                        <div
+                          class="dataTables_paginate paging_simple_numbers"
+                          id="DataTables_Table_0_paginate"
+                        >
+                          <ul class="pagination">
+                            <li
+                              class="paginate_button page-item previous disabled"
+                              id="DataTables_Table_0_previous"
+                            >
+                              <a
+                                href="#"
+                                aria-controls="DataTables_Table_0"
+                                data-dt-idx="0"
+                                tabindex="0"
+                                class="page-link"
+                              >Previous</a>
+                            </li>
+                            <li class="paginate_button page-item active">
+                              <a
+                                href="#"
+                                aria-controls="DataTables_Table_0"
+                                data-dt-idx="1"
+                                tabindex="0"
+                                class="page-link"
+                              >1</a>
+                            </li>
+                            <li
+                              class="paginate_button page-item next disabled"
+                              id="DataTables_Table_0_next"
+                            >
+                              <a
+                                href="#"
+                                aria-controls="DataTables_Table_0"
+                                data-dt-idx="2"
+                                tabindex="0"
+                                class="page-link"
+                              >Next</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
+<script>
+import jwtdecode from "jwt-decode";
+import axios from "axios";
+import router from "../../router";
+
+export default {
+  data() {
+    const token = localStorage.usertoken;
+    const decoded = jwtdecode(token);
+    return {
+      uid: decoded.uid,
+      auth: "",
+      doctors: [],
+      saveLoading: false,
+      doctor: {
+        first_name: "",
+        last_name: "",
+        email: "",
+        gender: "",
+        address: "",
+        phone: "",
+        password: "",
+        hospital_id: ""
+      },
+      loading: true
+    };
+  },
+
+  mounted() {
+    axios.get("/medico/show/" + this.uid).then(res => {
+      axios
+        .get("/doctors/" + res.data.hospital_id)
+        .then(response => {
+          this.doctor.hospital_id = res.data.hospital_id;
+          setInterval(() => {
+            this.doctors = response.data;
+            this.loading = false;
+          }, 2000);
+        })
+        .catch(err => {
+          var errors = err.response.data[0].message;
+          this.$toast.error(`${errors}`, {
+            timeout: 5000
+          });
+        });
+    });
+  },
+  methods: {
+    registerDoc() {
+      this.saveLoading = true;
+      axios
+        .post("/doctors/save", {
+          first_name: this.doctor.first_name,
+          last_name: this.doctor.last_name,
+          email: this.doctor.email,
+          phone: this.doctor.phone,
+          gender: this.doctor.gender,
+          address: this.doctor.address,
+          hospital_id: this.doctor.hospital_id,
+          password: this.doctor.password
+        })
+        .then(res => {
+          setTimeout(() => {
+            this.saveLoading = false;
+          }, 2000);
+          this.$toast.success(`${res.data.message}`, {
+            timeout: 5000
+          });
+        })
+        .catch(err => {
+          setTimeout(() => {
+            this.saveLoading = false;
+          }, 2000);
+          var errors = err.response.data[0].message;
+          this.$toast.error(`${errors}`, {
+            timeout: 5000
+          });
+        });
+    },
+    deleteDoc(doctor) {
+      axios
+        .post("/doctors/delete/" + doctor._id)
+        .then(response => {
+          console.log(response);
+          if (response.status == 204) {
+            this.$toast.success("Doctor Deleted", {
+              timeout: 5000
+            });
+          }
+        })
+        .catch(err => {
+          this.$toast.error(`Error`, {
+            timeout: 5000
+          });
+          console.log(err);
+        });
+    }
+  }
+};
+</script>>

@@ -7,7 +7,7 @@
                         <span>Main</span>
                     </li>
                     <li class="active"> 
-                        <a href="index.html"><i class="fe fe-home"></i> <span>Hospital</span></a>
+                        <router-link to="/hospital"><i clrouter-linkss="fe fe-home"></i> <span>Hospital</span></router-link>
                     </li>
                     <li> 
                         <router-link to="/appointments"><i class="fe fe-layout"></i> <span>Appointments</span></router-link>

@@ -1,299 +1,343 @@
 <template>
-    <div>
-        <div class="page-wrapper" style="min-height: 900px;">
-            <div class="content container-fluid">
-                <!-- Page Header -->
-                <div class="page-header">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h3 class="page-title">Appointments</h3>
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Appointments</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Page Header -->
-                <div class="row">
-                    <div class="col-md-12">
-                    
-                        <!-- Recent Orders -->
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"></div></div><div class="row"><div class="col-sm-12"><table class="datatable table table-hover table-center mb-0 dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-                                        <thead>
-                                            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Doctor Name: activate to sort column descending" style="width: 232px;">Doctor Name</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Speciality: activate to sort column ascending" style="width: 101px;">Speciality</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Patient Name: activate to sort column ascending" style="width: 186px;">Patient Name</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Apointment Time: activate to sort column ascending" style="width: 159px;">Apointment Time</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 65px;">Status</th><th class="text-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Amount: activate to sort column ascending" style="width: 80px;">Amount</th></tr>
-                                        </thead>
-                                        <tbody>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                        <tr role="row" class="odd">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-02.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Darren Elder</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Dental</td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient2.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Travis Trimble </a>
-                                                    </h2>
-                                                </td>
-                                                
-                                                <td>5 Nov 2019 <span class="text-primary d-block">11.00 AM - 11.35 AM</span></td>
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_2" class="check" checked="">
-                                                        <label for="status_2" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    $300.00
-                                                </td>
-                                            </tr><tr role="row" class="even">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-03.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Deborah Angel</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Cardiology</td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient3.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Carl Kelly</a>
-                                                    </h2>
-                                                </td>
-                                                <td>11 Nov 2019 <span class="text-primary d-block">12.00 PM - 12.15 PM</span></td>
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_3" class="check" checked="">
-                                                        <label for="status_3" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    $150.00
-                                                </td>
-                                            </tr><tr role="row" class="odd">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-09.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. John Gibbs</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Dental</td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient9.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Walter Roberson</a>
-                                                    </h2>
-                                                </td>
-                                                
-                                                <td>21 Nov 2019 <span class="text-primary d-block">12.10 PM - 12.25 PM</span></td>
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_5" class="check" checked="">
-                                                        <label for="status_5" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    $300.00
-                                                </td>
-                                            </tr><tr role="row" class="even">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-06.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Katharine Berthold</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Orthopaedics</td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient6.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Elsie Gilley</a>
-                                                    </h2>
-                                                </td>
-                                                
-                                                <td>16 Nov 2019 <span class="text-primary d-block">1.00 PM - 1.15 PM</span></td>
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_5" class="check" checked="">
-                                                        <label for="status_5" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    $250.00
-                                                </td>
-                                            </tr><tr role="row" class="odd">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-07.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Linda Tobin</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Neurology</td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient7.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Joan Gardner</a>
-                                                    </h2>
-                                                </td>
-                                                
-                                                <td>18 Nov 2019 <span class="text-primary d-block">1.10 PM - 1.25 PM</span></td>
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_5" class="check" checked="">
-                                                        <label for="status_5" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    $260.00
-                                                </td>
-                                            </tr><tr role="row" class="even">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-05.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Marvin Campbell</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Orthopaedics</td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient5.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Gina Moore</a>
-                                                    </h2>
-                                                </td>
-                                                
-                                                <td>15 Nov 2019 <span class="text-primary d-block">1.00 PM - 1.15 PM</span></td>
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_5" class="check" checked="">
-                                                        <label for="status_5" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    $200.00
-                                                </td>
-                                            </tr><tr role="row" class="odd">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-10.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Olga Barlow</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Dental</td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient10.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Robert Rhodes</a>
-                                                    </h2>
-                                                </td>
-                                                
-                                                <td>23 Nov 2019 <span class="text-primary d-block">12.10 PM - 12.25 PM</span></td>
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_5" class="check" checked="">
-                                                        <label for="status_5" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    $300.00
-                                                </td>
-                                            </tr><tr role="row" class="even">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-08.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Paul Richard</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Dermatology</td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient8.jpg" alt="User Image"></a>
-                                                        <a href="profile.html"> Daniel Griffing</a>
-                                                    </h2>
-                                                </td>
-                                                
-                                                <td>18 Nov 2019 <span class="text-primary d-block">11.10 AM - 11.25 AM</span></td>
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_5" class="check" checked="">
-                                                        <label for="status_5" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    $260.00
-                                                </td>
-                                            </tr><tr role="row" class="odd">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Ruby Perrin</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Dental</td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient1.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Charlene Reed </a>
-                                                    </h2>
-                                                </td>
-                                                <td>9 Nov 2019 <span class="text-primary d-block">11.00 AM - 11.15 AM</span></td>
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_1" class="check" checked="">
-                                                        <label for="status_1" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    $200.00
-                                                </td>
-                                            </tr><tr role="row" class="even">
-                                                <td class="sorting_1">
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-04.jpg" alt="User Image"></a>
-                                                        <a href="profile.html">Dr. Sofia Brient</a>
-                                                    </h2>
-                                                </td>
-                                                <td>Urology</td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient4.jpg" alt="User Image"></a>
-                                                        <a href="profile.html"> Michelle Fairfax</a>
-                                                    </h2>
-                                                </td>
-                                                <td>7 Nov 2019 <span class="text-primary d-block">1.00 PM - 1.20 PM</span></td>
-                                                <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" id="status_4" class="check" checked="">
-                                                        <label for="status_4" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    $150.00
-                                                </td>
-                                            </tr></tbody>
-                                    </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 10 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+  <div>
+    <div class="page-wrapper" style="min-height: 900px;">
+      <div class="content container-fluid">
+        <!-- Page Header -->
+        <div class="page-header">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="page-title">Appointments</h3>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active">Appointments</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /Page Header -->
+        <div class="container">
+          <div class="col-md-12">
+            <div class="content">
+              <div class="section">
+                <div class="timetable-example">
+                  <div class="tiva-timetable" data-view="week" data-mode="day" id="timetable-1">
+                    <div class="timetable-week show-time">
+                      <div class="timetable-axis">
+                        <div class="axis-item">08:00</div>
+                        <div class="axis-item">09:00</div>
+                        <div class="axis-item">10:00</div>
+                        <div class="axis-item">11:00</div>
+                        <div class="axis-item">12:00</div>
+                        <div class="axis-item">13:00</div>
+                        <div class="axis-item">14:00</div>
+                        <div class="axis-item">15:00</div>
+                        <div class="axis-item">16:00</div>
+                        <div class="axis-item">17:00</div>
+                        <div class="axis-item">18:00</div>
+                        <div class="axis-item">19:00</div>
+                      </div>
+                      <div
+                        class="container justify-content-center text-center"
+                        style="padding-top:15%"
+                        v-if="loading==true"
+                      >
+                        <vue-loaders-ball-pulse color="#55ce63" scale="1.5" />
+                      </div>
+                      <div v-else class="timetable-columns">
+                        <div class="timetable-column">
+                          <div class="timetable-column-header">
+                            Sunday
+                            <br />
+                            <span>Jun 14, 2020</span>
+                          </div>
+                          <div class="timetable-column-content">
+                            <div
+                              v-for="(event, index) in appointments"
+                              :key="event.id"
+                              class="cd-schedule__event cd-schedule__event--selected timetable-item"
+                            >
+                              <a
+                                :class="'timetable-title color-'+index"
+                                :style="{ top:toppx(event), height:'110px'}"
+                                data-toggle="modal"
+                                :href="'#exampleModal'+event.order_id"
+                              >
+                                <div class="timetable-title-wrap">
+                                  <div class="timetable-name">{{ event.title }}</div>
+                                  <div
+                                    class="timetable-time"
+                                  >{{ event.start_time }}-{{ event.end_time }}</div>
                                 </div>
+                              </a>
                             </div>
+                          </div>
+                          <div class="timetable-column-grid">
+                            <div class="grid-item first-column"></div>
+                            <div class="grid-item first-column"></div>
+                            <div class="grid-item first-column"></div>
+                            <div class="grid-item first-column"></div>
+                            <div class="grid-item first-column"></div>
+                            <div class="grid-item first-column"></div>
+                            <div class="grid-item first-column"></div>
+                            <div class="grid-item first-column"></div>
+                            <div class="grid-item first-column"></div>
+                            <div class="grid-item first-column"></div>
+                          </div>
                         </div>
-                        <!-- /Recent Orders -->
-                        
+                        <div class="timetable-column">
+                          <div class="timetable-column-header">
+                            Monday
+                            <br />
+                            <span>Jun 15, 2020</span>
+                          </div>
+                          <div class="timetable-column-content"></div>
+                          <div class="timetable-column-grid">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                        </div>
+                        <div class="timetable-column">
+                          <div class="timetable-column-header">
+                            Tuesday
+                            <br />
+                            <span>Jun 16, 2020</span>
+                          </div>
+                          <div class="timetable-column-content"></div>
+                          <div class="timetable-column-grid">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                        </div>
+                        <div class="timetable-column">
+                          <div class="timetable-column-header">
+                            Wednesday
+                            <br />
+                            <span>Jun 17, 2020</span>
+                          </div>
+                          <div class="timetable-column-content"></div>
+                          <div class="timetable-column-grid">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                        </div>
+                        <div class="timetable-column">
+                          <div class="timetable-column-header">
+                            Thursday
+                            <br />
+                            <span>Jun 18, 2020</span>
+                          </div>
+                          <div class="timetable-column-content"></div>
+                          <div class="timetable-column-grid">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                        </div>
+                        <div class="timetable-column">
+                          <div class="timetable-column-header">
+                            Friday
+                            <br />
+                            <span>Jun 19, 2020</span>
+                          </div>
+                          <div class="timetable-column-content"></div>
+                          <div class="timetable-column-grid">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                        </div>
+                        <div class="timetable-column">
+                          <div class="timetable-column-header last-column">
+                            Saturday
+                            <br />
+                            <span>Jun 20, 2020</span>
+                          </div>
+                          <div class="timetable-column-content"></div>
+                          <div class="timetable-column-grid">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>			
-		</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</template>>
+    <appointment-modal v-for="(appointment,index) in appointments" :key="appointment.id" :index="index" :appointment="appointment"></appointment-modal>
+  </div>
+</template>
+<script>
+import axios from "axios";
+import AppointmentModal from '../Modals/AppointmentsModal'
+export default {
+  components:{
+    AppointmentModal
+  },
+  data() {
+    return {
+      appointments: [],
+      loading: true,
+      errors: "",
+      hospital_id:""
+    };
+  },
+  mounted() {
+    axios
+      .get(/appointment/)
+      .then(response => {
+        this.appointments = response.data;
+
+        setInterval(() => {
+          this.loading = false;
+        }, 3000);
+      })
+      .catch(err => {
+        setTimeout(() => {
+          this.loading = false;
+          this.errors = err.response.data[0].message;
+          this.$toast.error(`${this.errors}`, {
+            timeout: 5000
+          });
+        }, 2000);
+      });
+  },
+  methods: {
+    toppx(event) {
+      if (event.start_time == "08:00") {
+        return "0px";
+      } else if (event.start_time == "10:30") {
+        return "110px";
+      } else if (event.start_time == "12:30") {
+        return "220px";
+      } else if (event.start_time == "13:00") {
+        return "330px";
+      }
+    }
+  }
+};
+</script>
+<style scoped>
+table.calendar {
+  margin-bottom: 0;
+}
+
+table.calendar > thead > tr > th {
+  text-align: center;
+}
+
+table.calendar > tbody > tr > td {
+  height: 20px;
+}
+
+table.calendar > tbody > tr > td > div {
+  //padding: 8px;
+  height: 40px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+}
+
+table.calendar > tbody > tr > td.has-events {
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 4px;
+}
+
+table.calendar > tbody > tr > td.has-events > div {
+  background-color: #08c;
+  border-left: 1px solid white;
+}
+
+table.calendar > tbody > tr > td.has-events > div:first-child {
+  border-left: 0;
+  margin-left: 1px;
+}
+
+table.calendar > tbody > tr > td.has-events > div.practice {
+  opacity: 0.7;
+}
+table.calendar > tbody > tr > td.conflicts > div > span.title {
+  color: red;
+}
+table.calendar > tbody > tr > td.max-conflicts > div {
+  background-color: red;
+  color: white;
+}
+
+table.calendar > tbody > tr > td.has-events > div > span {
+  display: block;
+  text-align: center;
+}
+table.calendar > tbody > tr > td.has-events > div > span a {
+  color: white;
+}
+
+table.calendar > tbody > tr > td.has-events > div > span.title {
+  font-weight: bold;
+}
+
+table.table-borderless > thead > tr > th,
+table.table-borderless > tbody > tr > td {
+  border: 0;
+}
+
+.table tbody tr.hover td,
+.table tbody tr.hover th {
+  background-color: whiteSmoke;
+}
+</style>

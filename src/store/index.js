@@ -8,6 +8,7 @@ export default new Vuex.Store({
     pageSideBarClass:'',
     user:{
       token:localStorage.usertoken,
+      hospital_id:localStorage.hospital_id
     }
   },
   mutations: {

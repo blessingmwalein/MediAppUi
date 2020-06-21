@@ -13,6 +13,7 @@ import auth from '../middlewares/auth'
 import guest from '../middlewares/guest'
 import store from '../store'
 import middlewarePipeline from './middlewarePipeline'
+import DoctorProfile from '../components/profile/Doctor'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,16 @@ Vue.use(VueRouter)
         }
       },
       {
+        path:'/doctor/:id',
+        name:'DoctorProfile',
+        component:DoctorProfile,
+        meta:{
+          middleware:[
+            auth
+          ]
+        }
+      },
+      {
         path:'/doctors',
         name:'Doctors',
         component:Doctors,
@@ -46,7 +57,7 @@ Vue.use(VueRouter)
           middleware:[
             auth
           ]
-        }
+        },
       },
       {
         path:'/appointments',
