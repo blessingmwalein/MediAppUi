@@ -14,77 +14,88 @@ import guest from '../middlewares/guest'
 import store from '../store'
 import middlewarePipeline from './middlewarePipeline'
 import DoctorProfile from '../components/profile/Doctor'
+import PatientProfile from '../components/profile/Patient'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home,
-    meta:{
-      middleware:[
+    meta: {
+      middleware: [
         auth
       ]
     },
-    
-    children:[
+
+    children: [
       {
-        path:'/hospital',
-        name:'Hospital',
-        component:Hospital,
-        meta:{
-          middleware:[
+        path: '/hospital',
+        name: 'Hospital',
+        component: Hospital,
+        meta: {
+          middleware: [
             auth
           ]
         }
       },
       {
-        path:'/doctor/:id',
-        name:'DoctorProfile',
-        component:DoctorProfile,
-        meta:{
-          middleware:[
+        path: '/doctor/:id',
+        name: 'DoctorProfile',
+        component: DoctorProfile,
+        meta: {
+          middleware: [
             auth
           ]
         }
       },
       {
-        path:'/doctors',
-        name:'Doctors',
-        component:Doctors,
-        meta:{
-          middleware:[
+        path: '/patient/:id',
+        name: 'PatientProfile',
+        component: PatientProfile,
+        meta: {
+          middleware: [
+            auth
+          ]
+        }
+      },
+      {
+        path: '/doctors',
+        name: 'Doctors',
+        component: Doctors,
+        meta: {
+          middleware: [
             auth
           ]
         },
       },
       {
-        path:'/appointments',
-        name:'Appointments',
-        component:Appointments,
-        meta:{
-          middleware:[
+        path: '/appointments',
+        name: 'Appointments',
+        component: Appointments,
+        meta: {
+          middleware: [
             auth
           ]
         }
       },
       {
-        path:'/patients',
-        name:'Patient',
-        component:Patient,
-        meta:{
-          middleware:[
+        path: '/patients',
+        name: 'Patient',
+        component: Patient,
+        meta: {
+          middleware: [
             auth
           ]
         }
       },
       {
-        path:'/reviews',
-        name:'Review',
-        component:Review,
-        meta:{
-          middleware:[
+        path: '/reviews',
+        name: 'Review',
+        component: Review,
+        meta: {
+          middleware: [
             auth
           ]
         }
@@ -95,8 +106,8 @@ Vue.use(VueRouter)
     path: '/login',
     name: 'Login',
     component: Login,
-    meta:{
-      middleware:[
+    meta: {
+      middleware: [
         guest
       ]
     }
@@ -105,8 +116,8 @@ Vue.use(VueRouter)
     path: '/register',
     name: 'Register',
     component: Register,
-    meta:{
-      middleware:[
+    meta: {
+      middleware: [
         guest
       ]
     }
@@ -122,14 +133,14 @@ const router = new VueRouter({
   routes
 })
 
-router.beforeEach((to, from, next)=>{
-  if(!to.meta.middleware){
+router.beforeEach((to, from, next) => {
+  if (!to.meta.middleware) {
     return next()
   }
 
   const middleware = to.meta.middleware
 
-  const context ={
+  const context = {
     to,
     from,
     next,
@@ -137,7 +148,7 @@ router.beforeEach((to, from, next)=>{
   }
   return middleware[0]({
     ...context,
-    next:middlewarePipeline(context, middleware, 1)
+    next: middlewarePipeline(context, middleware, 1)
   })
 })
 

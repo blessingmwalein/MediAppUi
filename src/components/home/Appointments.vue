@@ -240,7 +240,7 @@ export default {
       .then(response => {
         this.appointments = response.data;
 
-        setInterval(() => {
+        setTimeout(() => {
           this.loading = false;
         }, 3000);
       })
