@@ -8,8 +8,11 @@ export default new Vuex.Store({
     pageSideBarClass:'',
     user:{
       token:localStorage.usertoken,
-      hospital_id:localStorage.hospital_id
-    }
+      hospital_id:localStorage.hospital_id,
+      user_type:localStorage.user_type
+    },
+    
+    selectedPage:"hospital"
   },
   mutations: {
     changeSideBarClass (state) {

@@ -11,10 +11,19 @@ import Doctors from '../components/home/Doctors'
 import Review from '../components/home/Reviews'
 import auth from '../middlewares/auth'
 import guest from '../middlewares/guest'
+// import admin from '../middlewares/admin'
+// import doctor from '../middlewares/doctor'
 import store from '../store'
 import middlewarePipeline from './middlewarePipeline'
 import DoctorProfile from '../components/profile/Doctor'
 import PatientProfile from '../components/profile/Patient'
+import DoctorDashBoard from '../components/Doctor/Dashboard'
+import DoctorSchedule from '../components/Doctor/Schedule'
+import DoctorAppointments from '../components/Doctor/Appointments'
+import DoctorPatients from '../components/Doctor/Patients'
+import DoctorChats  from '../components/Doctor/Chats'
+
+
 
 Vue.use(VueRouter)
 
@@ -25,10 +34,10 @@ const routes = [
     component: Home,
     meta: {
       middleware: [
-        auth
+        auth,
+        
       ]
-    },
-
+    }, 
     children: [
       {
         path: '/hospital',
@@ -46,7 +55,8 @@ const routes = [
         component: DoctorProfile,
         meta: {
           middleware: [
-            auth
+            auth,
+            
           ]
         }
       },
@@ -56,7 +66,8 @@ const routes = [
         component: PatientProfile,
         meta: {
           middleware: [
-            auth
+            auth,
+            
           ]
         }
       },
@@ -103,6 +114,63 @@ const routes = [
     ]
   },
   {
+    path:'/dashboard',
+    name:'DoctorDashboard',
+    component:DoctorDashBoard,
+    meta: {
+      middleware: [
+        auth,
+        
+      ]
+    },
+    children:[
+      {
+        path:'/docappointments',
+        name:'DoctorAppointMents',
+        component:DoctorAppointments,
+        meta: {
+          middleware: [
+            auth,
+            
+          ]
+        }
+      },
+      {
+        path:'/schedule',
+        name:'DoctorSchedule',
+        component:DoctorSchedule,
+        meta: {
+          middleware: [
+            auth,
+            
+          ]
+        }
+      },
+      {
+        path:'/doctorpatients',
+        name:'DoctorPatients',
+        component:DoctorPatients,
+        meta: {
+          middleware: [
+            auth,
+            
+          ]
+        }
+      },
+      {
+        path:'/doctorchats',
+        name:'DoctorChats',
+        component:DoctorChats,
+        meta: {
+          middleware: [
+            auth,
+            
+          ]
+        }
+      },
+    ]
+  },
+  {
     path: '/login',
     name: 'Login',
     component: Login,
@@ -127,12 +195,11 @@ const routes = [
     name: 'Profile',
     component: Profile
   },
+ 
 ]
-
 const router = new VueRouter({
-  routes
+  routes,
 })
-
 router.beforeEach((to, from, next) => {
   if (!to.meta.middleware) {
     return next()

@@ -32,7 +32,7 @@
           <hr />
           <div class="timetable-time" style="text-align:center; padding:10px; font-size:20px;">
             <div class="alert alert-info fade show" role="alert">
-              <strong>{{ appointment.start_time +'-'+appointment.end_time }}</strong>
+              <strong>{{ formatDate(appointment.start_time) +'-'+ formatDate(appointment.end_time) }}</strong>
             </div>
           </div>
 
@@ -46,6 +46,16 @@
 </template>
 <script>
 export default {
-  props: ["appointment", "index"]
+  props: ["appointment", "index"],
+
+  methods:{
+     formatDate(oldDate){
+      var date = new Date(oldDate)
+       var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      return days[date.getDay()]+" "+date.getDate()+" "+ date.getHours()+":"+date.getMinutes()+"0"
+    }
+  }
+
+
 };
 </script>>
