@@ -80,6 +80,9 @@ export default {
       user_type: ""
     };
   },
+  mounted(){
+    console.log(process.env.VUE_APP_ROOT_URL)
+  },
   methods: {
     login() {
       this.loading = true;
