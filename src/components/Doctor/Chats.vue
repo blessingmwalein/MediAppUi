@@ -25,7 +25,7 @@
                     <div class="media-img-wrap">
                       <div class="avatar avatar-away">
                         <img
-                          src="assets/img/patients/patient.jpg"
+                          src="assets/img/user.png"
                           alt="User Image"
                           class="avatar-img rounded-circle"
                         />
@@ -46,7 +46,7 @@
                     <div class="media-img-wrap">
                       <div class="avatar avatar-online">
                         <img
-                          src="assets/img/patients/patient1.jpg"
+                          src="assets/img/user.png"
                           alt="User Image"
                           class="avatar-img rounded-circle"
                         />
@@ -62,174 +62,11 @@
                       </div>
                     </div>
                   </a>
-                  <a href="javascript:void(0);" class="media">
-                    <div class="media-img-wrap">
-                      <div class="avatar avatar-away">
-                        <img
-                          src="assets/img/patients/patient2.jpg"
-                          alt="User Image"
-                          class="avatar-img rounded-circle"
-                        />
-                      </div>
-                    </div>
-                    <div class="media-body">
-                      <div>
-                        <div class="user-name">Travis Trimble</div>
-                        <div class="user-last-chat">Give me a full explanation about our project</div>
-                      </div>
-                      <div>
-                        <div class="last-chat-time block">7:30 PM</div>
-                        <div class="badge badge-success badge-pill">3</div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="javascript:void(0);" class="media read-chat">
-                    <div class="media-img-wrap">
-                      <div class="avatar avatar-online">
-                        <img
-                          src="assets/img/patients/patient3.jpg"
-                          alt="User Image"
-                          class="avatar-img rounded-circle"
-                        />
-                      </div>
-                    </div>
-                    <div class="media-body">
-                      <div>
-                        <div class="user-name">Carl Kelly</div>
-                        <div class="user-last-chat">That's very good UI design</div>
-                      </div>
-                      <div>
-                        <div class="last-chat-time block">6:59 PM</div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="javascript:void(0);" class="media read-chat">
-                    <div class="media-img-wrap">
-                      <div class="avatar avatar-offline">
-                        <img
-                          src="assets/img/patients/patient4.jpg"
-                          alt="User Image"
-                          class="avatar-img rounded-circle"
-                        />
-                      </div>
-                    </div>
-                    <div class="media-body">
-                      <div>
-                        <div class="user-name">Michelle Fairfax</div>
-                        <div class="user-last-chat">Yesterday i completed the task</div>
-                      </div>
-                      <div>
-                        <div class="last-chat-time block">11:21 AM</div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="javascript:void(0);" class="media read-chat">
-                    <div class="media-img-wrap">
-                      <div class="avatar avatar-online">
-                        <img
-                          src="assets/img/patients/patient5.jpg"
-                          alt="User Image"
-                          class="avatar-img rounded-circle"
-                        />
-                      </div>
-                    </div>
-                    <div class="media-body">
-                      <div>
-                        <div class="user-name">Gina Moore</div>
-                        <div class="user-last-chat">What is the major functionality?</div>
-                      </div>
-                      <div>
-                        <div class="last-chat-time block">10:05 AM</div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="javascript:void(0);" class="media read-chat">
-                    <div class="media-img-wrap">
-                      <div class="avatar avatar-away">
-                        <img
-                          src="assets/img/patients/patient6.jpg"
-                          alt="User Image"
-                          class="avatar-img rounded-circle"
-                        />
-                      </div>
-                    </div>
-                    <div class="media-body">
-                      <div>
-                        <div class="user-name">Elsie Gilley</div>
-                        <div
-                          class="user-last-chat"
-                        >This has allowed me to showcase not only my technical skills</div>
-                      </div>
-                      <div>
-                        <div class="last-chat-time block">Yesterday</div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="javascript:void(0);" class="media read-chat">
-                    <div class="media-img-wrap">
-                      <div class="avatar avatar-offline">
-                        <img
-                          src="assets/img/patients/patient7.jpg"
-                          alt="User Image"
-                          class="avatar-img rounded-circle"
-                        />
-                      </div>
-                    </div>
-                    <div class="media-body">
-                      <div>
-                        <div class="user-name">Joan Gardner</div>
-                        <div class="user-last-chat">Let's talk briefly in the evening.</div>
-                      </div>
-                      <div>
-                        <div class="last-chat-time block">Sunday</div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="javascript:void(0);" class="media read-chat">
-                    <div class="media-img-wrap">
-                      <div class="avatar avatar-online">
-                        <img
-                          src="assets/img/patients/patient8.jpg"
-                          alt="User Image"
-                          class="avatar-img rounded-circle"
-                        />
-                      </div>
-                    </div>
-                    <div class="media-body">
-                      <div>
-                        <div class="user-name">Daniel Griffing</div>
-                        <div class="user-last-chat">Do you have any collections? If so, what of?</div>
-                      </div>
-                      <div>
-                        <div class="last-chat-time block">Saturday</div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="javascript:void(0);" class="media read-chat">
-                    <div class="media-img-wrap">
-                      <div class="avatar avatar-away">
-                        <img
-                          src="assets/img/patients/patient9.jpg"
-                          alt="User Image"
-                          class="avatar-img rounded-circle"
-                        />
-                      </div>
-                    </div>
-                    <div class="media-body">
-                      <div>
-                        <div class="user-name">Walter Roberson</div>
-                        <div class="user-last-chat">Connect the two modules with in 1 day.</div>
-                      </div>
-                      <div>
-                        <div class="last-chat-time block">Friday</div>
-                      </div>
-                    </div>
-                  </a>
+                  
                 </div>
               </div>
             </div>
             <!-- /Chat Left -->
-
             <!-- Chat Right -->
             <div class="chat-cont-right">
               <div class="chat-header">
@@ -240,14 +77,14 @@
                   <div class="media-img-wrap">
                     <div class="avatar avatar-online">
                       <img
-                        src="assets/img/patients/patient.jpg"
+                        src="assets/img/user.png"
                         alt="User Image"
                         class="avatar-img rounded-circle"
                       />
                     </div>
                   </div>
                   <div class="media-body">
-                    <div class="user-name">Richard Wilson</div>
+                    <div class="user-name">{{ doctor.fname + " " + doctor.lname }}</div>
                     <div class="user-status">online</div>
                   </div>
                 </div>
@@ -527,3 +364,35 @@
       </div>
   </div>
 </template>
+
+
+<script>
+import axios from "axios";
+import jwtdecode from "jwt-decode";
+export default {
+  data() {
+    return {
+      doctor: {},
+    };
+  },
+  mounted() {
+    this.fetchdoctor();
+  },
+  methods: {
+    fetchdoctor() {
+      const token = localStorage.usertoken;
+      const decoded = jwtdecode(token);
+      axios
+        .get("medico/doctor/" + decoded.uid)
+        .then(response => {
+          console.log(decoded.uid);
+          this.doctor = response.data;
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
+  }
+};
+</script>
+
