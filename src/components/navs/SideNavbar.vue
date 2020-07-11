@@ -30,13 +30,13 @@
             :class="{'active':isSelected=='appointments'}"
             @click.prevent="changeSelection('appointments')"
           >
-            <router-link to="/appointments">
+            <router-link to="/hospital/appointments">
               <i class="fas fa-calendar-check"></i>
               <span>Appointments</span>
             </router-link>
           </li>
           <li :class="{'active':isSelected=='doctors'}" @click.prevent="changeSelection('doctors')">
-            <router-link to="/doctors">
+            <router-link to="/hospital/doctors">
                <i class="fas fa-user-injured"></i>
               <span>Doctors</span>
             </router-link>
@@ -45,13 +45,13 @@
             :class="{'active':isSelected=='patients'}"
             @click.prevent="changeSelection('patients')"
           >
-            <router-link to="/patients">
+            <router-link to="/hospital/patients">
                 <i class="fas fa-user-injured"></i>
               <span>Patients</span>
             </router-link>
           </li>
           <li :class="{'active':isSelected=='reviews'}" @click.prevent="changeSelection('reviews')">
-            <router-link to="/reviews">
+            <router-link to="/hospital/reviews">
               <i class="fas fa-star"></i>
               <span>Reviews</span>
             </router-link>

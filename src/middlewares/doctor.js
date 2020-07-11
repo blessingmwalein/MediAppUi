@@ -1,7 +1,7 @@
 export default function auth({next, store}){
-    if(store.state.user.user_type=="doctor"){
+    if(store.state.user.user_type != "doctor"){
         return next({
-            name:'DoctorDashboard'
+            name:'Profile'
         })
     }
     return next()

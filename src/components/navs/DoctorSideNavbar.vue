@@ -21,7 +21,7 @@
             :class="{'active':isSelected=='docappointments'}"
             @click.prevent="changeSelection('docappointments')"
           >
-            <router-link to="/docappointments">
+            <router-link to="/doctor/appointments">
               <i class="fas fa-columns"></i>
               <span>Appointments</span>
             </router-link>
@@ -30,7 +30,7 @@
             :class="{'active':isSelected=='schedule'}"
             @click.prevent="changeSelection('schedule')"
           >
-            <router-link to="/schedule">
+            <router-link to="/doctor/schedule">
               <i class="fas fa-columns"></i>
               <span>Schedule Slots</span>
             </router-link>
@@ -39,13 +39,13 @@
             :class="{'active':isSelected=='patients'}"
             @click.prevent="changeSelection('patients')"
           >
-            <router-link to="/doctorpatients">
+            <router-link to="/doctor/patients">
               <i class="fas fa-user-injured"></i>
               <span>Patients</span>
             </router-link>
           </li>
           <li :class="{'active':isSelected=='doctorchats'}" @click.prevent="changeSelection('doctorchats')">
-            <router-link to="/doctorchats">
+            <router-link to="/doctor/chats">
               <i class="fas fa-comments"></i>
               <span>Patients Chat</span>
             </router-link>

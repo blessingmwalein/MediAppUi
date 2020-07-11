@@ -50,7 +50,7 @@ const routes = [
         }
       },
       {
-        path: '/doctor/:id',
+        path: '/hospital/doctor/:id',
         name: 'DoctorProfile',
         component: DoctorProfile,
         meta: {
@@ -61,7 +61,7 @@ const routes = [
         }
       },
       {
-        path: '/patient/:id',
+        path: '/hospital/patient/:id',
         name: 'PatientProfile',
         component: PatientProfile,
         meta: {
@@ -72,7 +72,7 @@ const routes = [
         }
       },
       {
-        path: '/doctors',
+        path: '/hospital/doctors',
         name: 'Doctors',
         component: Doctors,
         meta: {
@@ -82,7 +82,7 @@ const routes = [
         },
       },
       {
-        path: '/appointments',
+        path: '/hospital/appointments',
         name: 'Appointments',
         component: Appointments,
         meta: {
@@ -92,7 +92,7 @@ const routes = [
         }
       },
       {
-        path: '/patients',
+        path: '/hospital/patients',
         name: 'Patient',
         component: Patient,
         meta: {
@@ -102,7 +102,7 @@ const routes = [
         }
       },
       {
-        path: '/reviews',
+        path: '/hospital/reviews',
         name: 'Review',
         component: Review,
         meta: {
@@ -114,18 +114,18 @@ const routes = [
     ]
   },
   {
-    path:'/dashboard',
+    path:'/doctor/dashboard',
     name:'DoctorDashboard',
     component:DoctorDashBoard,
     meta: {
       middleware: [
         auth,
-        
+        doctor
       ]
     },
     children:[
       {
-        path:'/docappointments',
+        path:'/doctor/appointments',
         name:'DoctorAppointMents',
         component:DoctorAppointments,
         meta: {
@@ -136,7 +136,7 @@ const routes = [
         }
       },
       {
-        path:'/schedule',
+        path:'/doctor/schedule',
         name:'DoctorSchedule',
         component:DoctorSchedule,
         meta: {
@@ -147,7 +147,7 @@ const routes = [
         }
       },
       {
-        path:'/doctorpatients',
+        path:'/doctor/patients',
         name:'DoctorPatients',
         component:DoctorPatients,
         meta: {
@@ -158,7 +158,7 @@ const routes = [
         }
       },
       {
-        path:'/doctorchats',
+        path:'/doctor/chats',
         name:'DoctorChats',
         component:DoctorChats,
         meta: {
