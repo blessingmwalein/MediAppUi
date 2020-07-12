@@ -120,7 +120,6 @@ const routes = [
     meta: {
       middleware: [
         auth,
-        doctor
       ]
     },
     children:[
